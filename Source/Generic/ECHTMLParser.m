@@ -9,11 +9,7 @@
 
 #import "ECHTMLParser.h"
 
-#import "ECLogging.h"
 #import "ECDocumentStyles.h"
-#import "ECLogging.h"
-
-#import "NSMutableAttributedString+ECCore.h"
 
 #if EC_PLATFORM_IOS
 #import <CoreText/CoreText.h>

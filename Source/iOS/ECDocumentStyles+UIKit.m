@@ -9,7 +9,9 @@
 
 #import "ECDocumentStyles+UIKit.h"
 #import "ECDocumentStyles.h"
-#import "UIFont+ECCore.h"
+
+#import <ECCore/ECCore.h>
+
 
 @implementation ECDocumentStyles(UIKit)
 
