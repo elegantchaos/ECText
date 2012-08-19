@@ -8,22 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		2204C5D215E13B0A00F71E15 /* ECDocumentParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 2204C5CA15E13B0A00F71E15 /* ECDocumentParser.h */; };
-		2204C5D315E13B0A00F71E15 /* ECDocumentParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 2204C5CA15E13B0A00F71E15 /* ECDocumentParser.h */; };
+		2204C5D315E13B0A00F71E15 /* ECDocumentParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 2204C5CA15E13B0A00F71E15 /* ECDocumentParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2204C5D415E13B0A00F71E15 /* ECDocumentParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2204C5CB15E13B0A00F71E15 /* ECDocumentParser.m */; };
 		2204C5D515E13B0A00F71E15 /* ECDocumentParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2204C5CB15E13B0A00F71E15 /* ECDocumentParser.m */; };
 		2204C5D615E13B0A00F71E15 /* ECDocumentStyles.h in Headers */ = {isa = PBXBuildFile; fileRef = 2204C5CC15E13B0A00F71E15 /* ECDocumentStyles.h */; };
-		2204C5D715E13B0A00F71E15 /* ECDocumentStyles.h in Headers */ = {isa = PBXBuildFile; fileRef = 2204C5CC15E13B0A00F71E15 /* ECDocumentStyles.h */; };
+		2204C5D715E13B0A00F71E15 /* ECDocumentStyles.h in Headers */ = {isa = PBXBuildFile; fileRef = 2204C5CC15E13B0A00F71E15 /* ECDocumentStyles.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2204C5D815E13B0A00F71E15 /* ECDocumentStyles.m in Sources */ = {isa = PBXBuildFile; fileRef = 2204C5CD15E13B0A00F71E15 /* ECDocumentStyles.m */; };
 		2204C5D915E13B0A00F71E15 /* ECDocumentStyles.m in Sources */ = {isa = PBXBuildFile; fileRef = 2204C5CD15E13B0A00F71E15 /* ECDocumentStyles.m */; };
 		2204C5DA15E13B0A00F71E15 /* ECHTMLParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 2204C5CE15E13B0A00F71E15 /* ECHTMLParser.h */; };
-		2204C5DB15E13B0A00F71E15 /* ECHTMLParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 2204C5CE15E13B0A00F71E15 /* ECHTMLParser.h */; };
+		2204C5DB15E13B0A00F71E15 /* ECHTMLParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 2204C5CE15E13B0A00F71E15 /* ECHTMLParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2204C5DC15E13B0A00F71E15 /* ECHTMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2204C5CF15E13B0A00F71E15 /* ECHTMLParser.m */; };
 		2204C5DD15E13B0A00F71E15 /* ECHTMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2204C5CF15E13B0A00F71E15 /* ECHTMLParser.m */; };
 		2204C5DE15E13B0A00F71E15 /* ECMarkdownParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 2204C5D015E13B0A00F71E15 /* ECMarkdownParser.h */; };
-		2204C5DF15E13B0A00F71E15 /* ECMarkdownParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 2204C5D015E13B0A00F71E15 /* ECMarkdownParser.h */; };
+		2204C5DF15E13B0A00F71E15 /* ECMarkdownParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 2204C5D015E13B0A00F71E15 /* ECMarkdownParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2204C5E015E13B0A00F71E15 /* ECMarkdownParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2204C5D115E13B0A00F71E15 /* ECMarkdownParser.m */; };
 		2204C5E115E13B0A00F71E15 /* ECMarkdownParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2204C5D115E13B0A00F71E15 /* ECMarkdownParser.m */; };
-		2204C5E415E13B1F00F71E15 /* ECDocumentStyles+UIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 2204C5E215E13B1F00F71E15 /* ECDocumentStyles+UIKit.h */; };
+		2204C5E415E13B1F00F71E15 /* ECDocumentStyles+UIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 2204C5E215E13B1F00F71E15 /* ECDocumentStyles+UIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2204C5E515E13B1F00F71E15 /* ECDocumentStyles+UIKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 2204C5E315E13B1F00F71E15 /* ECDocumentStyles+UIKit.m */; };
 		2204C5F015E1537C00F71E15 /* ECConfig.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2251BBAD15DC1B4E00F2FE40 /* ECConfig.framework */; };
 		2204C5F115E1537C00F71E15 /* ECCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2204C5EC15E1536200F71E15 /* ECCore.framework */; };
