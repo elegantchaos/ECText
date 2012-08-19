@@ -22,10 +22,10 @@
          </BuildActionEntry>
          <BuildActionEntry
             buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "22BEA1BE15DA55920036A04F"
@@ -45,7 +45,35 @@
                BlueprintIdentifier = "2251B9FE15DBCC3E00F2FE40"
                BuildableName = "ECLogging.framework"
                BlueprintName = "ECLoggingMac"
-               ReferencedContainer = "container:ECLogging.xcodeproj">
+               ReferencedContainer = "container:../ECLogging/ECLogging.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "2260A2E815DFD7290057C9DA"
+               BuildableName = "ECCore.framework"
+               BlueprintName = "ECCoreMac"
+               ReferencedContainer = "container:../ECCore/ECCore.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "2251B9FE15DBCC3E00F2FE40"
+               BuildableName = "ECText.framework"
+               BlueprintName = "ECTextMac"
+               ReferencedContainer = "container:ECText.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -61,9 +89,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "225EC67111EBAA4800A97AEA"
-               BuildableName = "ECLoggingMacTests.octest"
-               BlueprintName = "ECLoggingMacTests"
-               ReferencedContainer = "container:ECLogging.xcodeproj">
+               BuildableName = "ECTextMacTests.octest"
+               BlueprintName = "ECTextMacTests"
+               ReferencedContainer = "container:ECText.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
