@@ -73,8 +73,8 @@
 		2204C5D115E13B0A00F71E15 /* ECMarkdownParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECMarkdownParser.m; sourceTree = "<group>"; };
 		2204C5E215E13B1F00F71E15 /* ECDocumentStyles+UIKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ECDocumentStyles+UIKit.h"; sourceTree = "<group>"; };
 		2204C5E315E13B1F00F71E15 /* ECDocumentStyles+UIKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ECDocumentStyles+UIKit.m"; sourceTree = "<group>"; };
-		2204C5EC15E1536200F71E15 /* ECCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ECCore.framework; path = "../../../../../../../../../../../../Caches/DerivedData/ECIntegration-fbajcwyruhnhxzgnphlhxaexutkp/Build/Products/Debug/ECCore.framework"; sourceTree = "<group>"; };
-		2204C5ED15E1536200F71E15 /* ECLogging.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ECLogging.framework; path = "../../../../../../../../../../../../Caches/DerivedData/ECIntegration-fbajcwyruhnhxzgnphlhxaexutkp/Build/Products/Debug/ECLogging.framework"; sourceTree = "<group>"; };
+		2204C5EC15E1536200F71E15 /* ECCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ECCore.framework; path = "/Caches/DerivedData/ECIntegration-fbajcwyruhnhxzgnphlhxaexutkp/Build/Products/Debug/ECCore.framework"; sourceTree = "<absolute>"; };
+		2204C5ED15E1536200F71E15 /* ECLogging.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ECLogging.framework; path = "/Caches/DerivedData/ECIntegration-fbajcwyruhnhxzgnphlhxaexutkp/Build/Products/Debug/ECLogging.framework"; sourceTree = "<absolute>"; };
 		2229674F1354EDC5005F42E7 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		2237ECE314F5644C00085BF5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		223CBAE61205C6380008A641 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -182,8 +182,6 @@
 		0867D691FE84028FC02AAC07 /* ECFoundation */ = {
 			isa = PBXGroup;
 			children = (
-				2204C5EC15E1536200F71E15 /* ECCore.framework */,
-				2204C5ED15E1536200F71E15 /* ECLogging.framework */,
 				22BBB10114F646D20086974D /* Source */,
 				2274B37714F56679003B8A0B /* Resources */,
 				0867D69AFE84028FC02AAC07 /* Frameworks */,
@@ -196,6 +194,8 @@
 		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2204C5EC15E1536200F71E15 /* ECCore.framework */,
+				2204C5ED15E1536200F71E15 /* ECLogging.framework */,
 				2251BBAD15DC1B4E00F2FE40 /* ECConfig.framework */,
 				2251BBA615DC18ED00F2FE40 /* ECUnitTests.framework */,
 				223CBAE11205C5930008A641 /* iOS */,
