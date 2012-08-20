@@ -30,7 +30,7 @@
 		2204C5F215E1537C00F71E15 /* ECLogging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2204C5ED15E1536200F71E15 /* ECLogging.framework */; };
 		2204C89F15E29F9200F71E15 /* ECTextGeneric.h in Headers */ = {isa = PBXBuildFile; fileRef = 2204C89E15E29F9200F71E15 /* ECTextGeneric.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2204C8A015E29F9200F71E15 /* ECTextGeneric.h in Headers */ = {isa = PBXBuildFile; fileRef = 2204C89E15E29F9200F71E15 /* ECTextGeneric.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2204C8A215E29FA400F71E15 /* ECText.h in Headers */ = {isa = PBXBuildFile; fileRef = 2204C8A115E29FA400F71E15 /* ECText.h */; };
+		2204C8A215E29FA400F71E15 /* ECText.h in Headers */ = {isa = PBXBuildFile; fileRef = 2204C8A115E29FA400F71E15 /* ECText.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		220D699915DC248300CCC17C /* ECConfig.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2251BBAD15DC1B4E00F2FE40 /* ECConfig.framework */; };
 		220D699A15DC248300CCC17C /* ECUnitTests.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2251BBA615DC18ED00F2FE40 /* ECUnitTests.framework */; };
 		220D699C15DC50CE00CCC17C /* ECUnitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2251BBA615DC18ED00F2FE40 /* ECUnitTests.framework */; };

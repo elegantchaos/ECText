@@ -10,8 +10,6 @@
 #import "ECDocumentStyles+UIKit.h"
 #import "ECDocumentStyles.h"
 
-#import <ECCore/ECCore.h>
-
 
 @implementation ECDocumentStyles(UIKit)
 
