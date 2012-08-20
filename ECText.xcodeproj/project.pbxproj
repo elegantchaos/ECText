@@ -28,6 +28,9 @@
 		2204C5F015E1537C00F71E15 /* ECConfig.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2251BBAD15DC1B4E00F2FE40 /* ECConfig.framework */; };
 		2204C5F115E1537C00F71E15 /* ECCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2204C5EC15E1536200F71E15 /* ECCore.framework */; };
 		2204C5F215E1537C00F71E15 /* ECLogging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2204C5ED15E1536200F71E15 /* ECLogging.framework */; };
+		2204C89F15E29F9200F71E15 /* ECTextGeneric.h in Headers */ = {isa = PBXBuildFile; fileRef = 2204C89E15E29F9200F71E15 /* ECTextGeneric.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2204C8A015E29F9200F71E15 /* ECTextGeneric.h in Headers */ = {isa = PBXBuildFile; fileRef = 2204C89E15E29F9200F71E15 /* ECTextGeneric.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2204C8A215E29FA400F71E15 /* ECText.h in Headers */ = {isa = PBXBuildFile; fileRef = 2204C8A115E29FA400F71E15 /* ECText.h */; };
 		220D699915DC248300CCC17C /* ECConfig.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2251BBAD15DC1B4E00F2FE40 /* ECConfig.framework */; };
 		220D699A15DC248300CCC17C /* ECUnitTests.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2251BBA615DC18ED00F2FE40 /* ECUnitTests.framework */; };
 		220D699C15DC50CE00CCC17C /* ECUnitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2251BBA615DC18ED00F2FE40 /* ECUnitTests.framework */; };
@@ -73,6 +76,8 @@
 		2204C5E315E13B1F00F71E15 /* ECDocumentStyles+UIKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ECDocumentStyles+UIKit.m"; sourceTree = "<group>"; };
 		2204C5EC15E1536200F71E15 /* ECCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ECCore.framework; path = "/Caches/DerivedData/ECIntegration-fbajcwyruhnhxzgnphlhxaexutkp/Build/Products/Debug/ECCore.framework"; sourceTree = "<absolute>"; };
 		2204C5ED15E1536200F71E15 /* ECLogging.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ECLogging.framework; path = "/Caches/DerivedData/ECIntegration-fbajcwyruhnhxzgnphlhxaexutkp/Build/Products/Debug/ECLogging.framework"; sourceTree = "<absolute>"; };
+		2204C89E15E29F9200F71E15 /* ECTextGeneric.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECTextGeneric.h; sourceTree = "<group>"; };
+		2204C8A115E29FA400F71E15 /* ECText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECText.h; sourceTree = "<group>"; };
 		2229674F1354EDC5005F42E7 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		2237ECE314F5644C00085BF5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		223CBAE61205C6380008A641 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -292,6 +297,7 @@
 		2283A43A14F53BCC009142F7 /* Generic */ = {
 			isa = PBXGroup;
 			children = (
+				2204C89E15E29F9200F71E15 /* ECTextGeneric.h */,
 				2204C5CA15E13B0A00F71E15 /* ECDocumentParser.h */,
 				2204C5CB15E13B0A00F71E15 /* ECDocumentParser.m */,
 				2204C5CC15E13B0A00F71E15 /* ECDocumentStyles.h */,
@@ -307,6 +313,7 @@
 		2283A45514F53BCC009142F7 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
+				2204C8A115E29FA400F71E15 /* ECText.h */,
 				2204C5E215E13B1F00F71E15 /* ECDocumentStyles+UIKit.h */,
 				2204C5E315E13B1F00F71E15 /* ECDocumentStyles+UIKit.m */,
 			);
@@ -354,6 +361,7 @@
 				2204C5D615E13B0A00F71E15 /* ECDocumentStyles.h in Headers */,
 				2204C5DA15E13B0A00F71E15 /* ECHTMLParser.h in Headers */,
 				2204C5DE15E13B0A00F71E15 /* ECMarkdownParser.h in Headers */,
+				2204C89F15E29F9200F71E15 /* ECTextGeneric.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,6 +374,8 @@
 				2204C5DB15E13B0A00F71E15 /* ECHTMLParser.h in Headers */,
 				2204C5DF15E13B0A00F71E15 /* ECMarkdownParser.h in Headers */,
 				2204C5E415E13B1F00F71E15 /* ECDocumentStyles+UIKit.h in Headers */,
+				2204C8A015E29F9200F71E15 /* ECTextGeneric.h in Headers */,
+				2204C8A215E29FA400F71E15 /* ECText.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
