@@ -98,6 +98,8 @@ ECDefineDebugChannel(ECHTMLChannel);
 
 - (NSAttributedString*)attributedStringFromHTML:(NSString *)html
 {
+	html = [html stringByUnescapingEntities];
+
     NSMutableAttributedString* styled = [[NSMutableAttributedString alloc] initWithString:html attributes:self.attributesPlain];
     NSRegularExpressionOptions options = NSRegularExpressionCaseInsensitive | NSRegularExpressionDotMatchesLineSeparators;
     
