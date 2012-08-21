@@ -25,6 +25,7 @@
 @property (nonatomic, retain) NSRegularExpression* patternEm;
 @property (nonatomic, retain) NSRegularExpression* patternItalic;
 @property (nonatomic, retain) NSRegularExpression* patternStrong;
+@property (nonatomic, retain) NSRegularExpression* patternAnyTag;
 
 #pragma mark - Private Methods
 
@@ -36,10 +37,11 @@
 
 #pragma mark - Properties
 
-@synthesize patternBold;
-@synthesize patternEm;
-@synthesize patternItalic;
-@synthesize patternStrong;
+@synthesize patternBold = _patternBold;
+@synthesize patternEm = _patternEm;
+@synthesize patternItalic = _patternItalic;
+@synthesize patternStrong = _patternStrong;
+@synthesize patternAnyTag = _patternAnyTag;
 
 #pragma mark - Debug Channels
 
@@ -67,11 +69,12 @@ ECDefineDebugChannel(ECHTMLChannel);
 
 - (void)dealloc 
 {
-	[patternBold release];
-	[patternEm release];
-	[patternItalic release];
-	[patternStrong release];
-    
+	[_patternBold release];
+	[_patternEm release];
+	[_patternItalic release];
+	[_patternStrong release];
+    [_patternAnyTag release];
+
     [super dealloc];
 }
 
@@ -90,6 +93,7 @@ ECDefineDebugChannel(ECHTMLChannel);
     self.patternStrong = [NSRegularExpression regularExpressionWithPattern:@"<strong>(.*?)</strong>" options:options error:&error];
     self.patternItalic = [NSRegularExpression regularExpressionWithPattern:@"<i>(.*?)</i>" options:options error:&error];
     self.patternEm = [NSRegularExpression regularExpressionWithPattern:@"<em>(.*?)</em>" options:options error:&error];
+    self.patternAnyTag = [NSRegularExpression regularExpressionWithPattern:@"<(.*?)>(.*?)</\\1>" options:options error:&error];
 }
 
 // --------------------------------------------------------------------------
@@ -98,8 +102,6 @@ ECDefineDebugChannel(ECHTMLChannel);
 
 - (NSAttributedString*)attributedStringFromHTML:(NSString *)html
 {
-	html = [html stringByUnescapingEntities];
-
     NSMutableAttributedString* styled = [[NSMutableAttributedString alloc] initWithString:html attributes:self.attributesPlain];
     NSRegularExpressionOptions options = NSRegularExpressionCaseInsensitive | NSRegularExpressionDotMatchesLineSeparators;
     
@@ -107,7 +109,10 @@ ECDefineDebugChannel(ECHTMLChannel);
 	[styled replaceExpression:self.patternStrong options:options atIndex:0 withIndex:1 attributes:self.attributesBold];
 	[styled replaceExpression:self.patternItalic options:options atIndex:0 withIndex:1 attributes:self.attributesItalic];
 	[styled replaceExpression:self.patternEm options:options atIndex:0 withIndex:1 attributes:self.attributesItalic];
-    
+	[styled replaceExpression:self.patternAnyTag options:options atIndex:0 withIndex:2 attributes:self.attributesPlain];
+
+	[styled unescapeEntities];
+
 	ECDebug(ECHTMLChannel, @"parsed html %@ into %@", html, styled);
     return [styled autorelease];
 }
