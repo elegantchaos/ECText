@@ -87,7 +87,7 @@ ECDefineDebugChannel(ECHTMLChannel);
 - (void)initialisePatterns
 {
 	NSError* error = nil;
-	NSRegularExpressionOptions options = NSRegularExpressionCaseInsensitive;
+	NSRegularExpressionOptions options = NSRegularExpressionCaseInsensitive | NSRegularExpressionDotMatchesLineSeparators;
 	
 	self.patternBold = [NSRegularExpression regularExpressionWithPattern:@"<b>(.*?)</b>" options:options error:&error];
     self.patternStrong = [NSRegularExpression regularExpressionWithPattern:@"<strong>(.*?)</strong>" options:options error:&error];
@@ -109,7 +109,7 @@ ECDefineDebugChannel(ECHTMLChannel);
 	[styled replaceExpression:self.patternStrong options:options atIndex:0 withIndex:1 attributes:self.attributesBold];
 	[styled replaceExpression:self.patternItalic options:options atIndex:0 withIndex:1 attributes:self.attributesItalic];
 	[styled replaceExpression:self.patternEm options:options atIndex:0 withIndex:1 attributes:self.attributesItalic];
-	[styled replaceExpression:self.patternAnyTag options:options atIndex:0 withIndex:2 attributes:self.attributesPlain];
+	//	[styled replaceExpression:self.patternAnyTag options:options atIndex:0 withIndex:2 attributes:self.attributesPlain];
 
 	[styled unescapeEntities];
 
