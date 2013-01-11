@@ -69,6 +69,8 @@ NSString *const ECDocumentLinkKey = @"ECDocumentLink";
 - (void)initialiseAttributes
 {
 #if EC_PLATFORM_IOS
+	// TODO: this stuff is iOS 5 or later; not sure if we need to fallback to the core text version for earlier systems (for use with our own styled text field)
+
 	self.attributesPlain = @{
 		UITextAttributeFont: [UIFont fontWithName:styles.plainFont size:styles.plainSize],
 		UITextAttributeTextColor: [UIColor colorWithCGColor:styles.colour]
