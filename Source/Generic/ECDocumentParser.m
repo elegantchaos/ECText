@@ -68,6 +68,26 @@ NSString *const ECDocumentLinkKey = @"ECDocumentLink";
 
 - (void)initialiseAttributes
 {
+#if EC_PLATFORM_IOS
+	self.attributesPlain = @{
+		UITextAttributeFont: [UIFont fontWithName:styles.plainFont size:styles.plainSize],
+		UITextAttributeTextColor: [UIColor colorWithCGColor:styles.colour]
+		};
+
+	self.attributesBold = @{
+						  UITextAttributeFont: [UIFont fontWithName:styles.boldFont size:styles.plainSize],
+		};
+
+	self.attributesItalic = @{
+						  UITextAttributeFont: [UIFont fontWithName:styles.italicFont size:styles.plainSize],
+		};
+
+	self.attributesLink = @{
+		ECDocumentLinkKey : @"^2",
+		 UITextAttributeTextColor: [UIColor colorWithCGColor:styles.linkColour]
+		 };
+
+#else
     CTFontRef boldFont = CTFontCreateWithName((CFStringRef)styles.boldFont, styles.plainSize, NULL);
     CTFontRef italicFont = CTFontCreateWithName((CFStringRef)styles.italicFont, styles.plainSize, NULL);
 	CTFontRef plainFont = CTFontCreateWithName((CFStringRef)styles.plainFont, styles.plainSize, NULL);
@@ -101,7 +121,7 @@ NSString *const ECDocumentLinkKey = @"ECDocumentLink";
     CFRelease(boldFont);
     CFRelease(italicFont);
 	CFRelease(plainFont);
-
+#endif
 }
 
 @end
