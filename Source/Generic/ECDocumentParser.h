@@ -15,11 +15,11 @@ extern NSString *const ECDocumentLinkKey;
 
 #pragma mark - Public Properties
 
-@property (nonatomic, retain) ECDocumentStyles* styles;
-@property (nonatomic, retain) NSDictionary* attributesBold;
-@property (nonatomic, retain) NSDictionary* attributesItalic;
-@property (nonatomic, retain) NSDictionary* attributesPlain;
-@property (nonatomic, retain) NSDictionary* attributesLink;
+@property (strong, nonatomic) ECDocumentStyles* styles;
+@property (strong, nonatomic) NSDictionary* attributesBold;
+@property (strong, nonatomic) NSDictionary* attributesItalic;
+@property (strong, nonatomic) NSDictionary* attributesPlain;
+@property (strong, nonatomic) NSDictionary* attributesLink;
 
 #pragma mark - Public Methods
 

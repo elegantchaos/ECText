@@ -11,16 +11,16 @@
 
 @interface ECDocumentStyles : NSObject
 
-@property (nonatomic, retain) NSString* plainFont;
-@property (nonatomic, retain) NSString* boldFont;
-@property (nonatomic, retain) NSString* headingFont;
-@property (nonatomic, retain) NSString* italicFont;
+@property (strong, nonatomic) NSString* plainFont;
+@property (strong, nonatomic) NSString* boldFont;
+@property (strong, nonatomic) NSString* headingFont;
+@property (strong, nonatomic) NSString* italicFont;
 
-@property (nonatomic, assign) CGFloat plainSize;
-@property (nonatomic, assign) CGFloat headingSize;
+@property (assign, nonatomic) CGFloat plainSize;
+@property (assign, nonatomic) CGFloat headingSize;
 
-@property (nonatomic, assign) CGColorRef colour;
-@property (nonatomic, assign) CGColorRef linkColour;
+@property (assign, nonatomic) CGColorRef colour;
+@property (assign, nonatomic) CGColorRef linkColour;
 
 
 @end

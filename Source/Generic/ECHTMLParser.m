@@ -21,11 +21,11 @@
 
 #pragma mark - Private Properties
 
-@property (nonatomic, retain) NSRegularExpression* patternBold;
-@property (nonatomic, retain) NSRegularExpression* patternEm;
-@property (nonatomic, retain) NSRegularExpression* patternItalic;
-@property (nonatomic, retain) NSRegularExpression* patternStrong;
-@property (nonatomic, retain) NSRegularExpression* patternAnyTag;
+@property (strong, nonatomic) NSRegularExpression* patternBold;
+@property (strong, nonatomic) NSRegularExpression* patternEm;
+@property (strong, nonatomic) NSRegularExpression* patternItalic;
+@property (strong, nonatomic) NSRegularExpression* patternStrong;
+@property (strong, nonatomic) NSRegularExpression* patternAnyTag;
 
 #pragma mark - Private Methods
 
