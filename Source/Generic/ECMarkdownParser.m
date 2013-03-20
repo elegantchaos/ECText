@@ -108,7 +108,7 @@ ECDefineDebugChannel(ECMarkdownChannel);
 - (void)initialisePatterns
 {
 	NSError* error = nil;
-	NSRegularExpressionOptions options = NSRegularExpressionCaseInsensitive;
+	NSRegularExpressionOptions options = NSRegularExpressionCaseInsensitive | NSRegularExpressionDotMatchesLineSeparators;
 	
 	self.patternBold = [NSRegularExpression regularExpressionWithPattern:@"\\*\\*(.*?)\\*\\*" options:options error:&error];
 	self.patternHeading1 = [NSRegularExpression regularExpressionWithPattern:@"(^|\n)#+ (.*?\n)" options:options error:&error];
@@ -123,7 +123,7 @@ ECDefineDebugChannel(ECMarkdownChannel);
 - (NSAttributedString*)attributedStringFromMarkdown:(NSString*)markdown
 {
     NSMutableAttributedString* styled = [[NSMutableAttributedString alloc] initWithString:markdown attributes:self.attributesPlain];
-    NSRegularExpressionOptions options = NSRegularExpressionCaseInsensitive | NSRegularExpressionDotMatchesLineSeparators;
+    NSMatchingOptions options = 0;
     
     [styled replaceExpression:self.patternBold options:options atIndex:0 withIndex:1 attributes:self.attributesBold];
     [styled replaceExpression:self.patternHeading1 options:options atIndex:0 withIndex:2 attributes:self.attributesHeading1];
