@@ -25,14 +25,17 @@
 		2204C5E115E13B0A00F71E15 /* ECMarkdownParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2204C5D115E13B0A00F71E15 /* ECMarkdownParser.m */; };
 		2204C5E415E13B1F00F71E15 /* ECDocumentStyles+UIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 2204C5E215E13B1F00F71E15 /* ECDocumentStyles+UIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2204C5E515E13B1F00F71E15 /* ECDocumentStyles+UIKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 2204C5E315E13B1F00F71E15 /* ECDocumentStyles+UIKit.m */; };
-		2204C5F115E1537C00F71E15 /* ECCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2204C5EC15E1536200F71E15 /* ECCore.framework */; };
-		2204C5F215E1537C00F71E15 /* ECLogging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2204C5ED15E1536200F71E15 /* ECLogging.framework */; };
 		2204C89F15E29F9200F71E15 /* ECTextGeneric.h in Headers */ = {isa = PBXBuildFile; fileRef = 2204C89E15E29F9200F71E15 /* ECTextGeneric.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2204C8A015E29F9200F71E15 /* ECTextGeneric.h in Headers */ = {isa = PBXBuildFile; fileRef = 2204C89E15E29F9200F71E15 /* ECTextGeneric.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2204C8A215E29FA400F71E15 /* ECText.h in Headers */ = {isa = PBXBuildFile; fileRef = 2204C8A115E29FA400F71E15 /* ECText.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		220D699A15DC248300CCC17C /* ECUnitTests.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2251BBA615DC18ED00F2FE40 /* ECUnitTests.framework */; };
 		220D699D15DC510900CCC17C /* ECText.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2251B9FF15DBCC3E00F2FE40 /* ECText.framework */; };
 		22339C3915DEC1C60017BC6B /* ECText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2251BA1215DBCC4A00F2FE40 /* ECText.framework */; };
+		224CA8EE1792FE32007369FA /* ECTextTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 224CA8ED1792FE32007369FA /* ECTextTests.m */; };
+		224CA8EF1792FE32007369FA /* ECTextTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 224CA8ED1792FE32007369FA /* ECTextTests.m */; };
+		224CA8F01792FE8E007369FA /* ECUnitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2251BBA615DC18ED00F2FE40 /* ECUnitTests.framework */; };
+		224CA8F51792FF11007369FA /* ECLogging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 224CA8F41792FF11007369FA /* ECLogging.framework */; };
+		224CA8F61792FF30007369FA /* ECLogging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 224CA8F41792FF11007369FA /* ECLogging.framework */; };
+		224CA8F71792FF41007369FA /* ECUnitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2251BBA615DC18ED00F2FE40 /* ECUnitTests.framework */; };
 		2251BA0015DBCC3E00F2FE40 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2283A3BB14F52E93009142F7 /* Cocoa.framework */; };
 		2251BA6415DBD9A600F2FE40 /* ECText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2251B9FF15DBCC3E00F2FE40 /* ECText.framework */; };
 		2268499E14F5720600B8691A /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2283A3CD14F52E93009142F7 /* SenTestingKit.framework */; };
@@ -48,7 +51,6 @@
 			dstSubfolderSpec = 10;
 			files = (
 				220D699D15DC510900CCC17C /* ECText.framework in CopyFiles */,
-				220D699A15DC248300CCC17C /* ECUnitTests.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,10 +67,10 @@
 		2204C5D115E13B0A00F71E15 /* ECMarkdownParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECMarkdownParser.m; sourceTree = "<group>"; };
 		2204C5E215E13B1F00F71E15 /* ECDocumentStyles+UIKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ECDocumentStyles+UIKit.h"; sourceTree = "<group>"; };
 		2204C5E315E13B1F00F71E15 /* ECDocumentStyles+UIKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ECDocumentStyles+UIKit.m"; sourceTree = "<group>"; };
-		2204C5EC15E1536200F71E15 /* ECCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ECCore.framework; path = "/Caches/DerivedData/ECIntegration-fbajcwyruhnhxzgnphlhxaexutkp/Build/Products/Debug/ECCore.framework"; sourceTree = "<absolute>"; };
-		2204C5ED15E1536200F71E15 /* ECLogging.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ECLogging.framework; path = "/Caches/DerivedData/ECIntegration-fbajcwyruhnhxzgnphlhxaexutkp/Build/Products/Debug/ECLogging.framework"; sourceTree = "<absolute>"; };
 		2204C89E15E29F9200F71E15 /* ECTextGeneric.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECTextGeneric.h; sourceTree = "<group>"; };
 		2204C8A115E29FA400F71E15 /* ECText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECText.h; sourceTree = "<group>"; };
+		224CA8ED1792FE32007369FA /* ECTextTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECTextTests.m; sourceTree = "<group>"; };
+		224CA8F41792FF11007369FA /* ECLogging.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ECLogging.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2251B9FF15DBCC3E00F2FE40 /* ECText.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ECText.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2251BA1215DBCC4A00F2FE40 /* ECText.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ECText.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2251BA4315DBCD3900F2FE40 /* IOSDebug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = IOSDebug.xcconfig; sourceTree = "<group>"; };
@@ -97,8 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2204C5F115E1537C00F71E15 /* ECCore.framework in Frameworks */,
-				2204C5F215E1537C00F71E15 /* ECLogging.framework in Frameworks */,
+				224CA8F61792FF30007369FA /* ECLogging.framework in Frameworks */,
 				2251BA0015DBCC3E00F2FE40 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -114,9 +115,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				224CA8F51792FF11007369FA /* ECLogging.framework in Frameworks */,
 				2251BA6415DBD9A600F2FE40 /* ECText.framework in Frameworks */,
 				2268499F14F5722300B8691A /* Cocoa.framework in Frameworks */,
 				2268499E14F5720600B8691A /* SenTestingKit.framework in Frameworks */,
+				224CA8F71792FF41007369FA /* ECUnitTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,6 +127,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				224CA8F01792FE8E007369FA /* ECUnitTests.framework in Frameworks */,
 				22339C3915DEC1C60017BC6B /* ECText.framework in Frameworks */,
 				2274B38E14F56896003B8A0B /* SenTestingKit.framework in Frameworks */,
 			);
@@ -159,14 +163,21 @@
 		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2204C5EC15E1536200F71E15 /* ECCore.framework */,
-				2204C5ED15E1536200F71E15 /* ECLogging.framework */,
+				224CA8F41792FF11007369FA /* ECLogging.framework */,
 				2251BBA615DC18ED00F2FE40 /* ECUnitTests.framework */,
 				2283A3BB14F52E93009142F7 /* Cocoa.framework */,
 				2283A3BE14F52E93009142F7 /* AppKit.framework */,
 				2283A3CD14F52E93009142F7 /* SenTestingKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		224CA8EC1792FE32007369FA /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				224CA8ED1792FE32007369FA /* ECTextTests.m */,
+			);
+			path = Tests;
 			sourceTree = "<group>";
 		};
 		2251BA4215DBCD3900F2FE40 /* Configuration */ = {
@@ -182,13 +193,6 @@
 				2251BA5F15DBD68500F2FE40 /* MacUnitTestRelease.xcconfig */,
 			);
 			path = Configuration;
-			sourceTree = "<group>";
-		};
-		2251BA6015DBD93700F2FE40 /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Tests;
 			sourceTree = "<group>";
 		};
 		2274B37714F56679003B8A0B /* Resources */ = {
@@ -226,13 +230,6 @@
 			path = iOS;
 			sourceTree = "<group>";
 		};
-		2283A46414F53BCC009142F7 /* Mac */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Mac;
-			sourceTree = "<group>";
-		};
 		2283A4C814F53C6F009142F7 /* Prefix */ = {
 			isa = PBXGroup;
 			children = (
@@ -249,9 +246,8 @@
 				2251BA4215DBCD3900F2FE40 /* Configuration */,
 				2283A43A14F53BCC009142F7 /* Generic */,
 				2283A45514F53BCC009142F7 /* iOS */,
-				2283A46414F53BCC009142F7 /* Mac */,
 				2283A4C814F53C6F009142F7 /* Prefix */,
-				2251BA6015DBD93700F2FE40 /* Tests */,
+				224CA8EC1792FE32007369FA /* Tests */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -500,6 +496,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				224CA8EE1792FE32007369FA /* ECTextTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -507,6 +504,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				224CA8EF1792FE32007369FA /* ECTextTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -563,6 +561,11 @@
 			baseConfigurationReference = 2251BA5E15DBD68500F2FE40 /* MacUnitTestDebug.xcconfig */;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../../../../../../../../../../castor/Caches/DerivedData/ECIntegration-fbajcwyruhnhxzgnphlhxaexutkp/Build/Products/Debug",
+					"/Caches/DerivedData/ECIntegration-fbajcwyruhnhxzgnphlhxaexutkp/Build/Products/Debug",
+				);
 				INFOPLIST_FILE = Resources/ECTextTests.plist;
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
 			};
@@ -573,6 +576,11 @@
 			baseConfigurationReference = 2251BA5F15DBD68500F2FE40 /* MacUnitTestRelease.xcconfig */;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../../../../../../../../../../castor/Caches/DerivedData/ECIntegration-fbajcwyruhnhxzgnphlhxaexutkp/Build/Products/Debug",
+					"/Caches/DerivedData/ECIntegration-fbajcwyruhnhxzgnphlhxaexutkp/Build/Products/Debug",
+				);
 				INFOPLIST_FILE = Resources/ECTextTests.plist;
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
 			};
