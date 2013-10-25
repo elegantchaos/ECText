@@ -43,7 +43,7 @@ return self;
 {
     ECDocumentStyles* styles = [[ECDocumentStyles alloc] initWithFont:self.font colour:self.textColor];
 	
-	return [styles autorelease];
+	return styles;
 }
 
 @end
@@ -59,7 +59,7 @@ return self;
 {
 	ECDocumentStyles* styles = [[ECDocumentStyles alloc] initWithFont:self.font colour:self.textColor];
 	
-	return [styles autorelease];
+	return styles;
 }
 
 @end
@@ -75,7 +75,7 @@ return self;
 {
 ECDocumentStyles* styles = [[ECDocumentStyles alloc] initWithFont:self.font colour:self.textColor];
 
-return [styles autorelease];
+return styles;
 }
 
 @end

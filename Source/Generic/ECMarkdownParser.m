@@ -19,29 +19,15 @@
 
 @interface ECMarkdownParser()
 
-#pragma mark - Private Properties
-
 @property (strong, nonatomic) NSDictionary* attributesHeading1;
 @property (strong, nonatomic) NSRegularExpression* patternBold;
 @property (strong, nonatomic) NSRegularExpression* patternHeading1;
 @property (strong, nonatomic) NSRegularExpression* patternItalic;
 @property (strong, nonatomic) NSRegularExpression* patternLink;
 
-#pragma mark - Private Methods
-
-- (void)initialisePatterns;
-
 @end
 
 @implementation ECMarkdownParser
-
-#pragma mark - Properties
-
-@synthesize attributesHeading1;
-@synthesize patternBold;
-@synthesize patternHeading1;
-@synthesize patternItalic;
-@synthesize patternLink;
 
 #pragma mark - Debug Channels
 
@@ -64,21 +50,6 @@ ECDefineDebugChannel(ECMarkdownChannel);
     return self;
 }
 
-// --------------------------------------------------------------------------
-//! Cleanup.
-// --------------------------------------------------------------------------
-
-- (void)dealloc 
-{
-	[attributesHeading1 release];
-	[patternBold release];
-	[patternHeading1 release];
-    [patternItalic release];
-    [patternLink release];
-    
-    [super dealloc];
-}
-
 
 #pragma mark - Markdown
 
@@ -92,11 +63,7 @@ ECDefineDebugChannel(ECMarkdownChannel);
 	
     CTFontRef headingFont = CTFontCreateWithName((CFStringRef)self.styles.headingFont, self.styles.headingSize, NULL);
 
-	self.attributesHeading1 = 
-    [NSDictionary dictionaryWithObjectsAndKeys:
-     (id) headingFont, (id) kCTFontAttributeName,
-     nil
-     ];
+	self.attributesHeading1 = @{( __bridge NSString*)kCTFontAttributeName : (__bridge id) headingFont };
 
     CFRelease(headingFont);
 }
@@ -131,7 +98,7 @@ ECDefineDebugChannel(ECMarkdownChannel);
     [styled replaceExpression:self.patternLink options:options atIndex:0 withIndex:1 attributes:self.attributesLink];
 
     ECDebug(ECMarkdownChannel, @"parsed mardown %@ to %@", markdown, styled);
-    return [styled autorelease];
+    return styled;
 }
 
 @end

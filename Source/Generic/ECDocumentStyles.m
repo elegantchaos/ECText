@@ -11,23 +11,4 @@
 
 @implementation ECDocumentStyles
 
-@synthesize boldFont;
-@synthesize colour;
-@synthesize linkColour;
-@synthesize headingFont;
-@synthesize headingSize;
-@synthesize italicFont;
-@synthesize plainFont;
-@synthesize plainSize;
-
-- (void)dealloc
-{
-    [boldFont release];
-    [headingFont release];
-	[italicFont release];
-    [plainFont release];
-    
-    [super dealloc];
-}
-
 @end

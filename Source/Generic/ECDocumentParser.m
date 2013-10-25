@@ -45,20 +45,6 @@ NSString *const ECDocumentLinkKey = @"ECDocumentLink";
     return self;
 }
 
-// --------------------------------------------------------------------------
-//! Cleanup.
-// --------------------------------------------------------------------------
-
-- (void)dealloc 
-{
-	[attributesBold release];
-	[attributesItalic release];
-    [attributesLink release];
-	[attributesPlain release];
-    [styles release];
-    
-    [super dealloc];
-}
 
 #pragma mark - Initialisation
 

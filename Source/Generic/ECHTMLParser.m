@@ -35,14 +35,6 @@
 
 @implementation ECHTMLParser
 
-#pragma mark - Properties
-
-@synthesize patternBold = _patternBold;
-@synthesize patternEm = _patternEm;
-@synthesize patternItalic = _patternItalic;
-@synthesize patternStrong = _patternStrong;
-@synthesize patternAnyTag = _patternAnyTag;
-
 #pragma mark - Debug Channels
 
 ECDefineDebugChannel(ECHTMLChannel);
@@ -61,21 +53,6 @@ ECDefineDebugChannel(ECHTMLChannel);
     }
 	
     return self;
-}
-
-// --------------------------------------------------------------------------
-//! Cleanup.
-// --------------------------------------------------------------------------
-
-- (void)dealloc 
-{
-	[_patternBold release];
-	[_patternEm release];
-	[_patternItalic release];
-	[_patternStrong release];
-    [_patternAnyTag release];
-
-    [super dealloc];
 }
 
 #pragma mark - HTML
@@ -113,7 +90,7 @@ ECDefineDebugChannel(ECHTMLChannel);
 	[styled unescapeEntities];
 
 	ECDebug(ECHTMLChannel, @"parsed html %@ into %@", html, styled);
-    return [styled autorelease];
+    return styled;
 }
 
 @end
