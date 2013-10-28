@@ -73,7 +73,8 @@ return self;
 
 - (ECDocumentStyles*)defaultStyles
 {
-ECDocumentStyles* styles = [[ECDocumentStyles alloc] initWithFont:self.font colour:self.textColor];
+    UIColor* color = self.textColor ? self.textColor : [UIColor blackColor];
+    ECDocumentStyles* styles = [[ECDocumentStyles alloc] initWithFont:self.font colour:color];
 
 return styles;
 }
