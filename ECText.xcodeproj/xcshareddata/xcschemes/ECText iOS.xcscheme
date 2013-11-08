@@ -57,7 +57,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2274B38C14F56896003B8A0B"
-               BuildableName = "ECTextIOSTests.octest"
+               BuildableName = "ECTextIOSTests.xctest"
                BlueprintName = "ECTextIOSTests"
                ReferencedContainer = "container:ECText.xcodeproj">
             </BuildableReference>
@@ -75,7 +75,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2274B38C14F56896003B8A0B"
-               BuildableName = "ECTextIOSTests.octest"
+               BuildableName = "ECTextIOSTests.xctest"
                BlueprintName = "ECTextIOSTests"
                ReferencedContainer = "container:ECText.xcodeproj">
             </BuildableReference>
