@@ -83,8 +83,8 @@
 		2251BA5F15DBD68500F2FE40 /* MacUnitTestRelease.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = MacUnitTestRelease.xcconfig; sourceTree = "<group>"; };
 		2251BA6C15DBDA5100F2FE40 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2251BBA615DC18ED00F2FE40 /* ECUnitTests.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ECUnitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		225EC67211EBAA4800A97AEA /* ECTextMacTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ECTextMacTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2274B38D14F56896003B8A0B /* ECTextIOSTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ECTextIOSTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		225EC67211EBAA4800A97AEA /* ECTextMacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ECTextMacTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2274B38D14F56896003B8A0B /* ECTextIOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ECTextIOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2277CEF316D776CE00835964 /* ECTextTests.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ECTextTests.plist; sourceTree = "<group>"; };
 		2283A3BB14F52E93009142F7 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		2283A3BE14F52E93009142F7 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -139,8 +139,8 @@
 		034768DFFF38A50411DB9C8B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				225EC67211EBAA4800A97AEA /* ECTextMacTests.octest */,
-				2274B38D14F56896003B8A0B /* ECTextIOSTests.octest */,
+				225EC67211EBAA4800A97AEA /* ECTextMacTests.xctest */,
+				2274B38D14F56896003B8A0B /* ECTextIOSTests.xctest */,
 				2251B9FF15DBCC3E00F2FE40 /* ECText.framework */,
 				2251BA1215DBCC4A00F2FE40 /* ECText.framework */,
 			);
@@ -339,7 +339,7 @@
 			);
 			name = ECTextMacTests;
 			productName = "EC Foundation Unit Tests";
-			productReference = 225EC67211EBAA4800A97AEA /* ECTextMacTests.octest */;
+			productReference = 225EC67211EBAA4800A97AEA /* ECTextMacTests.xctest */;
 			productType = "com.apple.product-type.bundle";
 		};
 		2274B38C14F56896003B8A0B /* ECTextIOSTests */ = {
@@ -357,7 +357,7 @@
 			);
 			name = ECTextIOSTests;
 			productName = blahTests;
-			productReference = 2274B38D14F56896003B8A0B /* ECTextIOSTests.octest */;
+			productReference = 2274B38D14F56896003B8A0B /* ECTextIOSTests.xctest */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
