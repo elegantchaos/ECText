@@ -38,9 +38,7 @@
 		224CA8F71792FF41007369FA /* ECUnitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2251BBA615DC18ED00F2FE40 /* ECUnitTests.framework */; };
 		2251BA0015DBCC3E00F2FE40 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2283A3BB14F52E93009142F7 /* Cocoa.framework */; };
 		2251BA6415DBD9A600F2FE40 /* ECText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2251B9FF15DBCC3E00F2FE40 /* ECText.framework */; };
-		2268499E14F5720600B8691A /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2283A3CD14F52E93009142F7 /* SenTestingKit.framework */; };
 		2268499F14F5722300B8691A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2283A3BB14F52E93009142F7 /* Cocoa.framework */; };
-		2274B38E14F56896003B8A0B /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2283A3CD14F52E93009142F7 /* SenTestingKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -88,7 +86,6 @@
 		2277CEF316D776CE00835964 /* ECTextTests.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ECTextTests.plist; sourceTree = "<group>"; };
 		2283A3BB14F52E93009142F7 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		2283A3BE14F52E93009142F7 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
-		2283A3CD14F52E93009142F7 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		2283A4CB14F53C6F009142F7 /* ECTextShared.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECTextShared.pch; sourceTree = "<group>"; };
 		22970D3C14F5AA80007B254B /* ECTextDebug.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECTextDebug.pch; sourceTree = "<group>"; };
 		22970D3D14F5AA80007B254B /* ECTextRelease.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECTextRelease.pch; sourceTree = "<group>"; };
@@ -118,7 +115,6 @@
 				224CA8F51792FF11007369FA /* ECLogging.framework in Frameworks */,
 				2251BA6415DBD9A600F2FE40 /* ECText.framework in Frameworks */,
 				2268499F14F5722300B8691A /* Cocoa.framework in Frameworks */,
-				2268499E14F5720600B8691A /* SenTestingKit.framework in Frameworks */,
 				224CA8F71792FF41007369FA /* ECUnitTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -129,7 +125,6 @@
 			files = (
 				224CA8F01792FE8E007369FA /* ECUnitTests.framework in Frameworks */,
 				22339C3915DEC1C60017BC6B /* ECText.framework in Frameworks */,
-				2274B38E14F56896003B8A0B /* SenTestingKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,7 +164,6 @@
 				2251BBA615DC18ED00F2FE40 /* ECUnitTests.framework */,
 				2283A3BB14F52E93009142F7 /* Cocoa.framework */,
 				2283A3BE14F52E93009142F7 /* AppKit.framework */,
-				2283A3CD14F52E93009142F7 /* SenTestingKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -366,6 +360,7 @@
 		0867D690FE84028FC02AAC07 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastTestingUpgradeCheck = 0510;
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Elegant Chaos";
 			};
