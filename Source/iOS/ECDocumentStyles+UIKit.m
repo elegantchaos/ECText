@@ -22,7 +22,7 @@ if ((self = [super init]) != nil)
 	self.boldFont = [font boldVariant].fontName;
 	self.italicFont = [font italicVariant].fontName;
 	self.headingFont = self.boldFont;
-	self.headingSize = font.pointSize + 2.0;
+	self.headingSize = font.pointSize + 2.0f;
 	self.colour = colourIn.CGColor;
 	self.linkColour = [UIColor blueColor].CGColor;
 }
