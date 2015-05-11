@@ -334,7 +334,7 @@
 			name = ECTextMacTests;
 			productName = "EC Foundation Unit Tests";
 			productReference = 225EC67211EBAA4800A97AEA /* ECTextMacTests.xctest */;
-			productType = "com.apple.product-type.bundle";
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		2274B38C14F56896003B8A0B /* ECTextIOSTests */ = {
 			isa = PBXNativeTarget;
@@ -352,7 +352,7 @@
 			name = ECTextIOSTests;
 			productName = blahTests;
 			productReference = 2274B38D14F56896003B8A0B /* ECTextIOSTests.xctest */;
-			productType = "com.apple.product-type.bundle";
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -361,7 +361,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastTestingUpgradeCheck = 0510;
-				LastUpgradeCheck = 0600;
+				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = "Elegant Chaos";
 			};
 			buildConfigurationList = 1DEB91B108733DA50010E9CD /* Build configuration list for PBXProject "ECText" */;
@@ -511,6 +511,7 @@
 		1DEB91B208733DA50010E9CD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
 			};
 			name = Debug;
 		};
