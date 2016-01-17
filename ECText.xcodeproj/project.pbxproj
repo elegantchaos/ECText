@@ -361,7 +361,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastTestingUpgradeCheck = 0510;
-				LastUpgradeCheck = 0630;
+				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Elegant Chaos";
 			};
 			buildConfigurationList = 1DEB91B108733DA50010E9CD /* Build configuration list for PBXProject "ECText" */;
@@ -527,6 +527,7 @@
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.elegantchaos.${PRODUCT_NAME:rfc1034identifier}";
 			};
 			name = Debug;
 		};
@@ -536,6 +537,7 @@
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.elegantchaos.${PRODUCT_NAME:rfc1034identifier}";
 			};
 			name = Release;
 		};
@@ -543,6 +545,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2251BA4415DBCD3900F2FE40 /* IOSRelease.xcconfig */;
 			buildSettings = {
+				PRODUCT_BUNDLE_IDENTIFIER = "com.elegantchaos.${PRODUCT_NAME:rfc1034identifier}";
 			};
 			name = Debug;
 		};
@@ -550,6 +553,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2251BA4415DBCD3900F2FE40 /* IOSRelease.xcconfig */;
 			buildSettings = {
+				PRODUCT_BUNDLE_IDENTIFIER = "com.elegantchaos.${PRODUCT_NAME:rfc1034identifier}";
 			};
 			name = Release;
 		};
@@ -565,6 +569,7 @@
 				);
 				INFOPLIST_FILE = Resources/ECTextTests.plist;
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.elegantchaos.${PRODUCT_NAME:rfc1034identifier}";
 			};
 			name = Debug;
 		};
@@ -580,6 +585,7 @@
 				);
 				INFOPLIST_FILE = Resources/ECTextTests.plist;
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.elegantchaos.${PRODUCT_NAME:rfc1034identifier}";
 			};
 			name = Release;
 		};
@@ -588,6 +594,7 @@
 			baseConfigurationReference = 2251BA5C15DBD68500F2FE40 /* IOSUnitTestDebug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = Resources/ECTextTests.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.elegantchaos.${PRODUCT_NAME:rfc1034identifier}";
 			};
 			name = Debug;
 		};
@@ -596,6 +603,7 @@
 			baseConfigurationReference = 2251BA5D15DBD68500F2FE40 /* IOSUnitTestRelease.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = Resources/ECTextTests.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.elegantchaos.${PRODUCT_NAME:rfc1034identifier}";
 			};
 			name = Release;
 		};
